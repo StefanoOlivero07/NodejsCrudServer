@@ -23,7 +23,7 @@ dotenv.config(
 )
 const connectionString: string = process.env.connectionStringRemote!;
 const dbName: string = process.env.dbName!;
-const port: number = parseInt(process.env.port!);
+const port: number = parseInt(process.env.PORT!);
 
 // C. Creazione e avvio del server http
 const server = http.createServer(app);
